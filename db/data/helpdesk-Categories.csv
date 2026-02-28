@@ -1,0 +1,9 @@
+ID,name,description,slaHours
+cat-0001,Hardware,Physical device issues including laptops, desktops, printers and peripherals,8
+cat-0002,Software,Application errors, installation issues and license problems,24
+cat-0003,Network,Connectivity issues, VPN access, Wi-Fi and LAN problems,4
+cat-0004,Access & Security,User account issues, password resets, permission requests,2
+cat-0005,Email & Communication,Email client issues, Teams/Slack problems and calendar sync,8
+cat-0006,Database,Database connection errors, slow queries and data issues,6
+cat-0007,Server & Infrastructure,Server downtime, storage and cloud resource issues,2
+cat-0008,Application Development,Bug reports and feature requests for internal applications,72

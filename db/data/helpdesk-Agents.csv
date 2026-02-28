@@ -1,0 +1,7 @@
+ID,name,email,phone,role,isActive
+agt-0001,John Smith,john.smith@helpdesk.com,+1-555-1001,L1_SUPPORT,true
+agt-0002,Sarah Johnson,sarah.j@helpdesk.com,+1-555-1002,L1_SUPPORT,true
+agt-0003,Mike Chen,mike.chen@helpdesk.com,+1-555-1003,L2_SUPPORT,true
+agt-0004,Lisa Patel,lisa.patel@helpdesk.com,+1-555-1004,L2_SUPPORT,true
+agt-0005,David Kumar,david.kumar@helpdesk.com,+1-555-1005,L3_SUPPORT,true
+agt-0006,Emma Wilson,emma.w@helpdesk.com,+1-555-1006,MANAGER,true

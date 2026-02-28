@@ -1,0 +1,6 @@
+ID,ticketNumber,title,description,status,priority,category_ID,department_ID,reporter_ID,assignedTo_ID
+tkt-0001,TKT-2024-00001,Laptop screen flickering,My laptop screen has been flickering since this morning. It happens randomly every few minutes,OPEN,HIGH,cat-0001,dept-0001,emp-0001,
+tkt-0002,TKT-2024-00002,Cannot access VPN from home,I am unable to connect to the company VPN while working from home. Error code 800,IN_PROGRESS,CRITICAL,cat-0003,dept-0002,emp-0002,agt-0003
+tkt-0003,TKT-2024-00003,Password reset required,I have been locked out of my account after multiple failed login attempts,RESOLVED,MEDIUM,cat-0004,dept-0003,emp-0003,agt-0001
+tkt-0004,TKT-2024-00004,Outlook keeps crashing,Microsoft Outlook crashes every time I try to open an attachment larger than 5MB,OPEN,MEDIUM,cat-0002,dept-0004,emp-0004,
+tkt-0005,TKT-2024-00005,Printer not working in floor 3,The shared printer on floor 3 is showing offline status and nobody can print,IN_PROGRESS,HIGH,cat-0001,dept-0005,emp-0005,agt-0002

@@ -1,0 +1,8 @@
+ID,name,email,phone,department_ID
+emp-0001,Alice Brown,alice.b@company.com,+1-555-2001,dept-0001
+emp-0002,Bob Taylor,bob.t@company.com,+1-555-2002,dept-0002
+emp-0003,Carol White,carol.w@company.com,+1-555-2003,dept-0003
+emp-0004,Dan Harris,dan.h@company.com,+1-555-2004,dept-0004
+emp-0005,Eve Martin,eve.m@company.com,+1-555-2005,dept-0005
+emp-0006,Frank Lee,frank.l@company.com,+1-555-2006,dept-0001
+emp-0007,Grace Kim,grace.k@company.com,+1-555-2007,dept-0002
