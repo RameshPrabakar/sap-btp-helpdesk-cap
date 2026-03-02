@@ -5,7 +5,7 @@ IT Helpdesk application that manages support tickets, agents, and SLAs using SAP
 
 ---
 
-## 📋 Features
+##  Features
 
 - ✅ Create & manage support tickets with auto-generated ticket numbers (`TKT-2024-00001`)
 - ✅ Track ticket lifecycle: `OPEN → IN_PROGRESS → RESOLVED → CLOSED`
@@ -19,7 +19,7 @@ IT Helpdesk application that manages support tickets, agents, and SLAs using SAP
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -31,7 +31,7 @@ IT Helpdesk application that manages support tickets, agents, and SLAs using SAP
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 helpdesk-cap/
@@ -64,7 +64,7 @@ helpdesk-cap/
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/RameshPrabakar/sap-btp-helpdesk-cap.git
-cd helpdesk-cap
+cd sap-btp-helpdesk-cap
 ```
 
 ### 2. Install dependencies
@@ -92,7 +92,7 @@ You'll see all available endpoints:
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### OData Endpoints (Auto-generated)
 
@@ -127,7 +127,7 @@ You'll see all available endpoints:
 
 ---
 
-## 💡 Example API Calls
+## Example API Calls
 
 ### Create a Ticket
 ```bash
@@ -177,7 +177,7 @@ curl "http://localhost:4004/helpdesk/Tickets?\$filter=status eq 'OPEN' and prior
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 npm test
@@ -194,7 +194,7 @@ Tests cover:
 
 ---
 
-## 📊 Data Model Overview
+## Data Model Overview
 
 ```
 Departments ──< Employees ──< Tickets >── Agents
@@ -208,7 +208,7 @@ Departments ──< Employees ──< Tickets >── Agents
 
 ---
 
-## 🗺️ Roadmap (Future Improvements)
+## Roadmap (Future Improvements)
 
 - [ ] Add React frontend with SAP UI5 Web Components
 - [ ] Email notifications on ticket assignment/resolution
@@ -220,7 +220,7 @@ Departments ──< Employees ──< Tickets >── Agents
 
 ---
 
-## 📚 Learning Resources
+## Learning Resources
 
 - [SAP CAP Official Documentation](https://cap.cloud.sap/docs)
 - [SAP BTP Developer Tutorials](https://developers.sap.com/tutorial-navigator.html)

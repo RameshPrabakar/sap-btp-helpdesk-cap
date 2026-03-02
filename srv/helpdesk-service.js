@@ -10,10 +10,6 @@ module.exports = class HelpdeskService extends cds.ApplicationService {
 
     const { Tickets, Agents, AuditLogs, Comments } = this.entities;
 
-    // ─────────────────────────────────────────────
-    // BEFORE HOOKS
-    // ─────────────────────────────────────────────
-
     /**
      * Auto-generate ticket number before create
      * Format: TKT-2024-00001
@@ -65,10 +61,6 @@ module.exports = class HelpdeskService extends cds.ApplicationService {
         req.error(409, `Ticket ${ticket.ticketNumber} is closed and cannot be modified`);
       }
     });
-
-    // ─────────────────────────────────────────────
-    // AFTER HOOKS
-    // ─────────────────────────────────────────────
 
     /**
      * After ticket is created — log it
