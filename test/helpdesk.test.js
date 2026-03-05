@@ -13,10 +13,6 @@ describe('Helpdesk Service Tests', () => {
     srv = await cds.test(__dirname + '/..').in(__dirname + '/..');
   });
 
-  // ─────────────────────────────────────────────
-  // TICKET CREATION TESTS
-  // ─────────────────────────────────────────────
-
   describe('Ticket Creation', () => {
 
     it('should create a new ticket with auto-generated ticket number', async () => {
@@ -52,9 +48,7 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // TICKET READ TESTS
-  // ─────────────────────────────────────────────
+
 
   describe('Ticket Retrieval', () => {
 
@@ -85,9 +79,7 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // AGENT ASSIGN ACTION TESTS
-  // ─────────────────────────────────────────────
+
 
   describe('Assign Agent Action', () => {
 
@@ -110,10 +102,6 @@ describe('Helpdesk Service Tests', () => {
       expect(response.status).toBe(404);
     });
   });
-
-  // ─────────────────────────────────────────────
-  // RESOLVE TICKET TESTS
-  // ─────────────────────────────────────────────
 
   describe('Resolve Ticket Action', () => {
 
@@ -154,9 +142,6 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // CLOSE TICKET TESTS
-  // ─────────────────────────────────────────────
 
   describe('Close Ticket Action', () => {
 
@@ -179,9 +164,6 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // ESCALATE TICKET TESTS
-  // ─────────────────────────────────────────────
 
   describe('Escalate Ticket Action', () => {
 
@@ -202,10 +184,6 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // DASHBOARD STATS TESTS
-  // ─────────────────────────────────────────────
-
   describe('Dashboard Statistics', () => {
 
     it('should return dashboard statistics', async () => {
@@ -218,9 +196,6 @@ describe('Helpdesk Service Tests', () => {
     });
   });
 
-  // ─────────────────────────────────────────────
-  // COMMENTS TESTS
-  // ─────────────────────────────────────────────
 
   describe('Comments', () => {
 

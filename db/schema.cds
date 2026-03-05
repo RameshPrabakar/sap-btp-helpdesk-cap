@@ -6,9 +6,6 @@ namespace helpdesk;
 
 using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 
-// ─────────────────────────────────────────────
-// ENUMS / CODE LISTS
-// ─────────────────────────────────────────────
 
 type TicketStatus  : String(20)  enum {
   Open        = 'OPEN';
@@ -32,9 +29,6 @@ type AgentRole : String(20) enum {
   Manager    = 'MANAGER';
 }
 
-// ─────────────────────────────────────────────
-// DEPARTMENT
-// ─────────────────────────────────────────────
 
 entity Departments : cuid, managed {
   name         : String(100) not null;
@@ -42,10 +36,6 @@ entity Departments : cuid, managed {
   employees    : Association to many Employees on employees.department = $self;
   tickets      : Association to many Tickets on tickets.department = $self;
 }
-
-// ─────────────────────────────────────────────
-// EMPLOYEES (Ticket Reporters)
-// ─────────────────────────────────────────────
 
 entity Employees : cuid, managed {
   name         : String(100) not null;
@@ -55,9 +45,6 @@ entity Employees : cuid, managed {
   tickets      : Association to many Tickets on tickets.reporter = $self;
 }
 
-// ─────────────────────────────────────────────
-// AGENTS (IT Support Staff)
-// ─────────────────────────────────────────────
 
 entity Agents : cuid, managed {
   name         : String(100) not null;
@@ -68,9 +55,6 @@ entity Agents : cuid, managed {
   tickets      : Association to many Tickets on tickets.assignedTo = $self;
 }
 
-// ─────────────────────────────────────────────
-// CATEGORIES
-// ─────────────────────────────────────────────
 
 entity Categories : cuid {
   name         : String(100) not null;
@@ -78,10 +62,6 @@ entity Categories : cuid {
   slaHours     : Integer default 24;  // SLA resolution time in hours
   tickets      : Association to many Tickets on tickets.category = $self;
 }
-
-// ─────────────────────────────────────────────
-// TICKETS (Core Entity)
-// ─────────────────────────────────────────────
 
 entity Tickets : cuid, managed {
   ticketNumber   : String(20);                         // Auto-generated e.g. TKT-2024-0001
@@ -102,9 +82,6 @@ entity Tickets : cuid, managed {
   isOverdue      : Boolean default false;
 }
 
-// ─────────────────────────────────────────────
-// COMMENTS
-// ─────────────────────────────────────────────
 
 entity Comments : cuid, managed {
   ticket       : Association to Tickets;
@@ -114,9 +91,6 @@ entity Comments : cuid, managed {
   authorEmail  : String(150);
 }
 
-// ─────────────────────────────────────────────
-// ATTACHMENTS
-// ─────────────────────────────────────────────
 
 entity Attachments : cuid, managed {
   ticket       : Association to Tickets;
@@ -126,9 +100,6 @@ entity Attachments : cuid, managed {
   url          : String(500);
 }
 
-// ─────────────────────────────────────────────
-// AUDIT LOG (Track all status changes)
-// ─────────────────────────────────────────────
 
 entity AuditLogs : cuid {
   ticket       : Association to Tickets;

@@ -17,7 +17,6 @@ service HelpdeskService @(path: '/helpdesk') {
   @readonly entity Agents       as projection on helpdesk.Agents
     where isActive = true;
 
-  // === TICKETS (Full CRUD) ===
   entity Tickets as projection on helpdesk.Tickets {
     *,
     category.name         as categoryName,
@@ -30,10 +29,9 @@ service HelpdeskService @(path: '/helpdesk') {
     attachments
   };
 
-  // === COMMENTS ===
+
   entity Comments as projection on helpdesk.Comments;
 
-  // === ATTACHMENTS ===
   entity Attachments as projection on helpdesk.Attachments;
 
   // === AUDIT LOGS (Read Only) ===

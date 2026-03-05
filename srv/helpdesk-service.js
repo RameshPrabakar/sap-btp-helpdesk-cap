@@ -265,6 +265,7 @@ module.exports = class HelpdeskService extends cds.ApplicationService {
       await this._logAudit(ticketID, 'Ticket Reopened', ticket.status, 'OPEN', agentName || 'System');
 
       return await SELECT.one.from(Tickets).where({ ID: ticketID });
+      
     });
 
     // ─────────────────────────────────────────────
